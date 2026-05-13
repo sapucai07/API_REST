@@ -1,3 +1,5 @@
+// consume la API
+
 fetch("https://rickandmortyapi.com/api/character")
     .then(respuesta => respuesta.json())
     .then(datos => {
@@ -12,6 +14,9 @@ ${personaje.name}
 </h5>
 <p>
 ${personaje.species}
+</p>
+<p>
+${personaje.status}
 </p>
 </div>
 </div>
